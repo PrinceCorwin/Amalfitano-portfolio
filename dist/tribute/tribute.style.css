@@ -1,0 +1,56 @@
+.main {
+  border-radius: 10px;
+  background: black;
+  margin: 20px;
+  width: 80%;
+  padding-bottom: 3em;
+}
+
+.title {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+#tableTitle {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30;
+}
+
+hr { 
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-style: inset;
+    border-width: 0.5px;
+} 
+
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: 	rgb(56,56,56);
+}
+
+.gandhi {
+  margin: 2em 10em;
+}

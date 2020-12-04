@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Steve Corwin Survey Form</title>
+  <link rel="stylesheet" href="./survey.style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div id="header">
+    <h1 id="title">AmalfiMakesIt Customer Service Survey</h1>
+  </div>
+ 
+    <p id="description">Please tell us about your experience with AmalfiMakesIt</p>
+    <form id="survey-form">
+      <div class="personal-info">
+        <div class="name-label">
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Full Name" required>
+        </div>
+        <div class="email-label">
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" id="email" name="email" placeholder="ex: username@domain.com" required>
+        </div>
+        <div class="number-label">
+          <label for="age" id="number-label">Age (Optional)</label>
+          <input type="number" id="number" name="age"  placeholder="1-120" min="1" max="120">
+        </div>
+      </div>
+      <p class="label-title">What delivery method did you use?</p>
+      <select id="dropdown" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Purchaced in store">Purchased in store</option>
+        <option value="Curbside/Pickup">Curbside/Pickup</option>
+        <option valu="Delivery">Delivery</option>
+      </select>
+      <p class="label-title">How satisfied were you with your delivery method? (Check one)</p>
+      <div class="form-group">
+        <label for="completely"><input id="completely" type="radio" value="completely" name="satisfaction">Completely</label>
+        <label for="mostly"><input id="mostly" type="radio" value="mostly" name="satisfaction">Mostly</label>
+        <label for="somewhat"><input id="somewhat" type="radio" value="somewhat" name="satisfaction">Somewhat</label>
+        <label for="not"><input id="not" type="radio" value="not satisfied" name="satisfaction">Not Satisfied</label>
+      </div>
+      <p class="label-title">Please tell us what we could improve (Check all that apply)</p>
+      <div class="form-group">
+        <label for="service">
+          <input type="checkbox" name="improve" id="service" value="service">Service</label>
+        <label for="quality">
+          <input type="checkbox" name="improve" id="quality" value="quality">Product quality</label>
+           <label for="improve">
+          <input type="checkbox" name="improve" id="variety" value="improve">Product variety</label>
+        <label for="cleanliness">
+          <input type="checkbox" name="improve" value="cleanliness">Store Cleanliness</label>
+              <label for="delivery">
+          <input type="checkbox" name="improve" value="delivery">Delivery</label>
+      </div>
+      <p >Additional comments or suggestions?</p>
+ 
+      <textarea id="comments" placeholder="Enter your comment here"></textarea>
+  
+   
+      <button type="submit" id="submit">Submit</button>
+  
+      
+      
+      
+      
+    </form>
+
+
+</div>
+</body>
+</html>
