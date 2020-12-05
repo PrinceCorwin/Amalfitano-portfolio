@@ -1,59 +1,65 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 #navbar {
-  background-color: red;
-  padding: 10px 0 10px 0;
-  width: 100vw;
+  background-color: transparent;
+
+  width: 100%;
+
   display: flex;
   justify-content: space-around;
   position: fixed;
   top: 0;
 }
 #welcome-section {
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-@media only screen and (max-width: 575px) {
-  #project-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-  .project-tile {
-    padding: 0;
-    margin: 0;
-  }
-}
+  background-image: url("https://bridgetales.com/wp-content/uploads/2020/12/gallery-background.png");
 
-#projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#project-grid {
-  background-color: green;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.project-tile {
-  display: flex;
-  width: 33.333%;
-  justify-content: space-between;
-  background-color: cyan;
-  padding: 10px;
-}
-img {
-  border-radius: 5%;
-  width: 100%;
+  height: 100vh;
+  background-size: cover;
 }
 
 #navbar a {
+  color: white;
   text-decoration: none;
-  padding: 5px;
-  border: 2px solid black;
+  padding: 7px;
+  margin: 20px;
+  border: 2px solid #0ae1e9;
   border-radius: 25px;
+  cursor: pointer;
+}
+#welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10%;
+}
+#welcome-head {
+  font-family: "Bubbler One", sans-serif;
+  font-size: 58px;
+  color: #0ae1e9;
+}
+#welcome-greet {
+  color: white;
+  position: relative;
+  font-family: "Bubbler One", sans-serif;
+  font-size: 40px;
+}
+@media only screen and (max-width: 575px) {
+  #welcome-head {
+    font-size: 35px;
+  }
+  #welcome-greet {
+    font-size: 25px;
+  }
+  #navbar a {
+    font-size: 0.7em;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
