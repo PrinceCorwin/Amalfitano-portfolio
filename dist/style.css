@@ -62,4 +62,7 @@
     align-items: center;
     justify-content: center;
   }
+  #welcome-text {
+    padding-top: 50%;
+  }
 }
