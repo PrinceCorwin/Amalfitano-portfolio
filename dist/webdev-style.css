@@ -1,0 +1,23 @@
+#navbar {
+  background-color: transparent;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+}
+
+#navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 7px;
+  margin: 20px;
+  border: 2px solid #0ae1e9;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#first-row {
+  margin-top: 80px;
+}
