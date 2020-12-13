@@ -1,31 +1,7 @@
 body {
   background-image: url("https://bridgetales.com/wp-content/uploads/2020/12/gallery-background.png");
 }
-.container h1 {
-  color: white;
-  font-family: "Bubbler One", sans-serif;
-  margin-top: 80px;
-}
-#navbar {
-  background-color: transparent;
 
-  width: 100%;
-
-  display: flex;
-  justify-content: space-around;
-
-  top: 0;
-}
-
-#navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 7px;
-  margin: 20px;
-  border: 2px solid #0ae1e9;
-  border-radius: 25px;
-  cursor: pointer;
-}
 #first-row {
   margin-top: 80px;
 }
