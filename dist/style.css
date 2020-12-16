@@ -7,6 +7,14 @@ body {
 .navbar-brand {
   color: white !important;
 }
+header {
+  margin: 20vh 0 20vh 0;
+}
+h2 {
+  padding-top: 1em;
+  color: white;
+  font-family: "Poiret One", sans-serif;
+}
 /*.icon-bar {
   background-color: black;
 }*/
@@ -22,15 +30,7 @@ body {
   border-radius: 25px;
   cursor: pointer;
 }
-#title-block {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 40vh;
-  align-items: center;
-  padding-top: 10%;
-}
+
 #title {
   font-family: "Great Vibes", sans-serif;
   font-size: 55px;
