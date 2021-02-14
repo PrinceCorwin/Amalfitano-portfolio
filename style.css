@@ -1,61 +1,29 @@
-body {
-  background-image: url("port-background.png");
-
-  height: 100vh;
-  background-size: cover;
-}
-.navbar-brand {
-  color: white !important;
-}
-header {
-  margin: 20vh 0 20vh 0;
-}
-h2 {
-  padding-top: 1em;
-  color: white;
-  font-family: "Poiret One", sans-serif;
-}
-/*.icon-bar {
-  background-color: black;
-}*/
-.navbar {
-  background: rgba(0, 0, 0, 0.4);
-}
-.my-links a {
-  color: white;
-  text-decoration: none;
-  padding: 7px !important;
-  margin: 8px;
-  border: 2px solid #0ae1e9;
-  border-radius: 25px;
-  cursor: pointer;
+/* roots and customs */
+:root {
+    --clr-primary:
+    --clr-midtone:
+    --clr-darktone:
+    --clr-contrast1:
+    --clr-contrast2:
+    --ff-primary:
+    --ff-accent:
 }
 
-#title {
-  font-family: "Great Vibes", sans-serif;
-  font-size: 55px;
-  color: white;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
-#author {
-  color: #0ae1e9;
-  position: relative;
-  font-family: "Poiret One", sans-serif;
-  font-size: 40px;
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
 }
-.img-grid {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 20vh;
-}
-.img-grid img {
-  width: 30vw;
-}
-@media screen and (max-width: 575px) {
-  #title {
-    font-size: 35px;
-  }
-  #author {
-    font-size: 25px;
-  }
-}
+
+/* classes below */
+
+
+/* id's below */
