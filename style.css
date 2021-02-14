@@ -54,15 +54,7 @@ nav {
   height: 8vh;
   background: var(--clr-dark);
 }
-#gallery {
-  background-color: black;
-  padding: 0 20px 0 20px;
-  /* font-size: 24px; */
-  display: flex;
-  color: white;
-  list-style: none;
-  height: 100%;
-  align-items: center;
+#ami-logo {
 }
 .nav-links {
   /* background-color: red; */
