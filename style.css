@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "existance";
+  src: url("Existence-Light.otf") format("OpenType");
+}
 *,
 *::before,
 *::after {
@@ -29,6 +33,9 @@ body {
 .container {
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container img {
   width: 30%;
@@ -37,27 +44,51 @@ body {
   left: 20px;
 }
 .signature {
-  font-family: var(--ff-primary);
-  font-size: 6rem;
+  font-family: existance;
+  font-weight: 800;
+  font-size: 5rem;
   color: var(--clr-dark);
   margin: auto;
   text-align: center;
 }
+#signature {
+  margin-bottom: 20px;
+}
+hr {
+  margin: auto;
+  height: 3px;
+  /* border-width: 0; */
+  background-color: var(--clr-midtone);
+  color: var(--clr-midtone);
+  width: 80%;
+}
 .trades {
-  font-size: 2rem;
+  font-family: var(--ff-primary);
+  font-size: 1.8rem;
+  color: transparent;
+  margin-top: 40px;
 }
 .trades a {
   color: var(--clr-midtone);
-  background-color: var(--clr-silver1);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+
+  box-shadow: 0 10px 10px rgba(107, 43, 56, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   padding: 3px 10px;
   text-decoration: none;
   cursor: pointer;
-  /* text-shadow: 0 0 10px var(--clr-dark), 0 0 20px var(--clr-light),
-    0 0 40px var(--clr-light), 0 0 80px var(--clr-light); */
+  transition: 0.2s ease-in;
+}
+.trades a:hover {
+  color: var(--clr-silver1);
+  background-color: rgba(107, 43, 56, 0.8);
+
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
+
+  padding: 3px 10px;
+  text-decoration: none;
+  cursor: pointer;
 }
 #dev {
   padding-left: 15px;
