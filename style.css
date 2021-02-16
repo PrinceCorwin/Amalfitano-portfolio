@@ -131,6 +131,7 @@ hr {
   padding: 40px;
   text-indent: 3rem;
   background-color: var(--clr-midtone);
+  font-family: var(--ff-primary);
   color: var(--clr-silver1);
   font-size: 2rem;
 }
