@@ -26,12 +26,15 @@ body {
   font-family: var(--ff-primary);
 
   /* background-color: #a38560; */
-  background-image: url("images/background.png");
-  background-size: cover;
+  /* background-image: url("images/background.png");
+  background-size: cover; */
 }
 
 .container {
+  background-image: url("images/background.png");
+  background-size: 100vw;
   height: 100vh;
+  /* overflow: visible; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,4 +100,19 @@ hr {
 #craft {
   padding-right: 15px;
   border-radius: 0 20px 20px 0;
+}
+.social-links {
+  /* background-color: white; */
+  width: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.fab {
+  color: var(--clr-dark);
 }
