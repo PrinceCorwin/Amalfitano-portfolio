@@ -115,4 +115,26 @@ hr {
 }
 .fab {
   color: var(--clr-dark);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fab:hover {
+  color: var(--clr-lighter);
+}
+#friend {
+  margin-top: 20px;
+  font-family: var(--ff-accent);
+  font-weight: 100;
+}
+.bio {
+  padding: 40px;
+  text-indent: 3rem;
+  background-color: var(--clr-midtone);
+  color: var(--clr-silver1);
+  font-size: 2rem;
+}
+.bio p,
+.bio h2 {
+  margin-bottom: 20px;
 }
