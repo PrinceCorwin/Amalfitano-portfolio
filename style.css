@@ -69,9 +69,12 @@ hr {
   font-family: var(--ff-primary);
   font-size: 1.8rem;
   color: transparent;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .trades a {
+  display: inline-block;
+  margin-top: 20px;
+
   color: var(--clr-midtone);
   background-color: transparent;
 
@@ -133,9 +136,11 @@ hr {
   background-color: var(--clr-midtone);
   font-family: var(--ff-primary);
   color: var(--clr-silver1);
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .bio p,
-.bio h2 {
+.bio h3 {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 800px) {
 }
