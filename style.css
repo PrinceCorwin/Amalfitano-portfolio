@@ -86,16 +86,7 @@ hr {
   cursor: pointer;
   transition: 0.2s ease-in;
 }
-.trades a:hover {
-  color: var(--clr-silver1);
-  background-color: rgba(107, 43, 56, 0.8);
 
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
-
-  padding: 3px 10px;
-  text-decoration: none;
-  cursor: pointer;
-}
 #dev {
   padding-left: 15px;
   border-radius: 20px 0 0 20px;
@@ -129,18 +120,32 @@ hr {
   margin-top: 20px;
   font-family: var(--ff-accent);
   font-weight: 100;
+  letter-spacing: 3px;
 }
-.bio {
-  padding: 40px;
+#bio {
+  padding: 20px;
   text-indent: 3rem;
   background-color: var(--clr-midtone);
   font-family: var(--ff-primary);
   color: var(--clr-silver1);
   font-size: 1.2rem;
+  cursor: pointer;
 }
-.bio p,
-.bio h3 {
-  margin-bottom: 20px;
+#bio p,
+#bio h3 {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 600px) {
+  .trades a:hover {
+    color: var(--clr-silver1);
+    background-color: rgba(107, 43, 56, 0.8);
+
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
+
+    padding: 3px 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 800px) {
   .container {
@@ -160,7 +165,17 @@ hr {
     align-items: center;
   }
   .container img {
+    /* background-color: black; */
     width: 50%;
     position: relative;
+    top: 20px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .trades a,
+  #dev,
+  #craft {
+    border-radius: 20px;
   }
 }
