@@ -70,6 +70,7 @@ hr {
   font-size: 1.8rem;
   color: transparent;
   margin-top: 20px;
+  /* background-color: white; */
 }
 .trades a {
   display: inline-block;
@@ -124,7 +125,8 @@ hr {
 }
 #bio {
   padding: 20px;
-  text-indent: 3rem;
+  /* text-indent: 2rem; */
+  text-align: center;
   background-color: var(--clr-midtone);
   font-family: var(--ff-primary);
   color: var(--clr-silver1);
@@ -173,9 +175,22 @@ hr {
   }
 }
 @media screen and (max-width: 600px) {
+  .trades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .trades a {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
   .trades a,
   #dev,
   #craft {
     border-radius: 20px;
+  }
+  #bio {
+    font-size: 1rem;
   }
 }

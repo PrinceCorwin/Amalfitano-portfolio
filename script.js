@@ -26,4 +26,5 @@ bio.addEventListener("click", function () {
     custom professional and personal website/web-app design, as well as sign
     making services, custom apparel, and general woodworking projects.
   </p>`;
+  bio.style = "text-align: left";
 });
