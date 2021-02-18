@@ -143,4 +143,24 @@ hr {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 800px) {
+  .container {
+    background-image: url("images/background2.png");
+  }
+  .signature {
+    margin-top: 10%;
+    font-size: 3rem;
+  }
+  .social-links {
+    position: relative;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container img {
+    width: 50%;
+    position: relative;
+  }
 }
