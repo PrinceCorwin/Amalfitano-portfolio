@@ -1,6 +1,8 @@
 // expand bio text visibility
-const bio = document.getElementById("bio");
-bio.addEventListener("click", function () {
+const seeMore = document.getElementById("see-more");
+const headShot = document.getElementById("headshot");
+const bio = document.getElementById("bio-text");
+seeMore.addEventListener("click", function () {
   bio.innerHTML = `<h3>A Brief Bio</h3>
   <p>
     As a creative maker of many things, my attention is now focused on the area that has given me the most joy
@@ -9,14 +11,14 @@ bio.addEventListener("click", function () {
     found that to be true.
   </p>
   <p>
-    My analytical/technical training and education, (including functional
-    programming, IT support, metal fabrication and woodworking), mixed with
-    an artistic creativity have always provided a sound basis for software
+    My analytical/technical training and education, <em>(including functional
+    programming, IT support, metal fabrication and woodworking)</em>, mixed with
+    an artistic creativity have always provided a sound basis for web
     development. It allows me to exercise both sides of the brain. Perhaps
     being ambidextrous is a happenstance of that.
   </p>
   <p>
-    As team player I understand the value of respecting and appreciating my
+    As a team player, I understand the value of respecting and appreciating my
     co-workers. There is rarely a problem that they can not help you solve.
     Lastly, my age and extensive work history have taught me how to be a
     productive and valuable employee.
@@ -26,5 +28,5 @@ bio.addEventListener("click", function () {
     custom professional and personal website/web-app design, as well as sign
     making services, custom apparel, and general woodworking projects.
   </p>`;
-  bio.style = "text-align: left";
+  // bio.style["text-align"] = "left";
 });

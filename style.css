@@ -2,6 +2,9 @@
   font-family: "existance";
   src: url("Existence-Light.otf") format("OpenType");
 }
+html {
+  scroll-behavior: smooth;
+}
 *,
 *::before,
 *::after {
@@ -15,7 +18,8 @@
   --clr-light: #e570ff;
   --clr-midtone: #6b2b38;
   --clr-dark: #491c23;
-  --clr-gold: #d9af67;
+  --clr-lightGold: #ffdf8a;
+  --clr-gold: #a68957;
   --clr-silver1: #b6b6b6;
   --clr-silver2: #636669;
   --ff-primary: "Raleway", sans-serif;
@@ -24,17 +28,12 @@
 
 body {
   font-family: var(--ff-primary);
-
-  /* background-color: #a38560; */
-  /* background-image: url("images/background.png");
-  background-size: cover; */
 }
 
 .container {
   background-image: url("images/background.png");
   background-size: 100vw;
   height: 100vh;
-  /* overflow: visible; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +59,6 @@ body {
 hr {
   margin: auto;
   height: 3px;
-  /* border-width: 0; */
   background-color: var(--clr-midtone);
   color: var(--clr-midtone);
   width: 80%;
@@ -70,7 +68,6 @@ hr {
   font-size: 1.8rem;
   color: transparent;
   margin-top: 20px;
-  /* background-color: white; */
 }
 .trades a {
   display: inline-block;
@@ -108,6 +105,7 @@ hr {
   top: 0;
   right: 0;
 }
+/* fab is FA icon class */
 .fab {
   color: var(--clr-dark);
   cursor: pointer;
@@ -124,20 +122,121 @@ hr {
   letter-spacing: 3px;
 }
 #bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  /* text-indent: 2rem; */
-  text-align: center;
+  /* text-align: center; */
   background-color: var(--clr-midtone);
   font-family: var(--ff-primary);
   color: var(--clr-silver1);
   font-size: 1.2rem;
-  cursor: pointer;
 }
 #bio p,
 #bio h3 {
   margin-bottom: 10px;
 }
+#see-more {
+  cursor: pointer;
+}
+#headshot {
+  display: block;
+  border-radius: 50%;
+}
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+/* developer section */
+.developer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to left top,
+    var(--clr-silver1),
+    var(--clr-lighter)
+  );
+  background-size: cover;
+  font-family: var(--ff-primary);
+  font-size: 3rem;
+  color: var(--clr-dark);
+  padding: 4rem 0 4rem 0;
+}
+.dev-title {
+  text-align: center;
+  padding: 40px 0;
+  /* font-size: 1.5rem;
+  font-family: var(--ff-primary); */
+}
+/* designer section */
+.design {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to left top,
+    var(--clr-gold),
+    var(--clr-lightGold)
+  );
+
+  background-size: cover;
+  font-family: var(--ff-primary);
+  font-size: 3rem;
+  color: var(--clr-dark);
+  padding: 4rem 0;
+}
+.des-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.span-title {
+  text-align: center;
+  padding: 20px;
+}
+.span-line {
+  height: 1px;
+  width: 100px;
+  background-color: var(--clr-dark);
+}
+.preview-container {
+  width: 100%;
+  /* border: 10px solid black; */
+  display: grid;
+  grid-template-columns: auto auto;
+  /* justify-content: center;
+  align-items: center; */
+}
+.preview {
+  background-color: var(--clr-dark);
+  /* width: 50%; */
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.preview-desc {
+  font-size: 1.2rem;
+  color: var(--clr-silver1);
+  padding-bottom: 1rem;
+}
+.preview > a,
+a > img {
+  width: 100%;
+}
 @media screen and (min-width: 600px) {
+  .container {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   .trades a:hover {
     color: var(--clr-silver1);
     background-color: rgba(107, 43, 56, 0.8);
@@ -152,6 +251,8 @@ hr {
 @media screen and (max-width: 800px) {
   .container {
     background-image: url("images/background2.png");
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
   }
   .signature {
     margin-top: 10%;
@@ -192,5 +293,30 @@ hr {
   }
   #bio {
     font-size: 1rem;
+  }
+  .design,
+  .developer {
+    font-size: 1.2rem;
+  }
+  .span-line {
+    width: 50px;
+  }
+  .preview-container {
+    grid-template-columns: auto;
+  }
+  .preview {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .span-line {
+    visibility: hidden;
+  }
+  .span-title {
+    width: 100%;
+    /* text-align: center; */
+    padding: 0;
+    /* background-color: black; */
   }
 }
