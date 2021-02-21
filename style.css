@@ -231,6 +231,7 @@ hr {
 .preview > a,
 a > img {
   width: 100%;
+  /* border-radius: 50%; */
 }
 @media screen and (min-width: 600px) {
   .container {
