@@ -292,6 +292,7 @@ a > img {
     border-radius: 20px;
   }
   #bio {
+    flex-direction: column;
     font-size: 1rem;
   }
   .design,
