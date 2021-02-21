@@ -137,6 +137,7 @@ hr {
   margin-bottom: 10px;
 }
 #see-more {
+  color: white;
   cursor: pointer;
 }
 #headshot {
