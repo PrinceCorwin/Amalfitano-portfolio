@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "existance";
+  font-family: "existence";
   src: url("Existence-Light.otf") format("OpenType");
 }
 html {
@@ -15,6 +15,11 @@ html {
 
 :root {
   --clr-lighter: #dcdcdc;
+  --clr-sbblue: #012069;
+  --clr-teal: #2aa5b3;
+  --clr-sbwhite: #dadbdd;
+  --clr-purple: #482d59;
+  --clr-sborange: #ffcd00;
   --clr-light: #e570ff;
   --clr-midtone: #6b2b38;
   --clr-dark: #491c23;
@@ -46,7 +51,7 @@ body {
   left: 20px;
 }
 .signature {
-  font-family: existance;
+  font-family: existence;
   font-weight: 800;
   font-size: 5rem;
   color: var(--clr-dark);
@@ -216,21 +221,40 @@ hr {
   align-items: center; */
 }
 .preview {
-  background-color: var(--clr-dark);
+  /* background-color: var(--clr-dark); */
   /* width: 50%; */
   justify-self: center;
   align-self: center;
   text-align: center;
   margin: 10px 10px;
 }
-
 .preview-desc {
+  /* background-color: var(--clr-silver2); */
   font-size: 1.2rem;
-  color: var(--clr-silver1);
-  padding-bottom: 1rem;
+  font-weight: bolder;
+  /* color: var(--clr-silver1); */
+  padding: 1rem;
 }
+#git {
+  background-color: black;
+  color: var(--clr-sbwhite);
+}
+#dummy {
+  background-color: var(--clr-sborange);
+  color: black;
+}
+#trim {
+  background-color: red;
+  color: var(--clr-sbwhite);
+}
+#todo {
+  background-color: var(--clr-teal);
+  color: var(--clr-sbwhite);
+}
+
 .preview > a,
 a > img {
+  display: block;
   width: 100%;
   /* border-radius: 50%; */
 }
