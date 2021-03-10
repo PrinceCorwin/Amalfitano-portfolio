@@ -175,8 +175,7 @@ hr {
 }
 .dev-title {
   text-align: center;
-  padding: 40px 0;
-  font-family: var(--ff-primary); */
+  padding: 20px 0;
 }
 .preview-container {
   width: 100%;
@@ -188,10 +187,8 @@ hr {
 }
 .preview {
   width: 20%;
-  /* justify-self: center;
-  align-self: center; */
   text-align: center;
-  margin: 10px 10px;
+  margin: 2.5rem 10px;
 }
 .preview-desc {
   display: flex;
@@ -201,13 +198,11 @@ hr {
   font-size: 1.2rem;
   font-weight: bolder;
   padding: 1rem;
-  /* text-align: center; */
 }
 .preview > a,
 a > img {
   display: block;
   width: 100%;
-  /* border-radius: 50%; */
 }
 #grixel {
   color: var(--clr-sbwhite);
@@ -248,8 +243,134 @@ a > img {
   background-color: var(--clr-teal);
   color: var(--clr-sbwhite);
 }
+/* slider start */
+.artist {
+  font-size: 3rem;
+  color: #2aa5b3;
+  margin: 0;
+  padding: 4rem 0 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-midtone);
+}
+.art-title {
+  text-align: center;
+  color: var(--clr-silver1);
+  padding-top: 20px;
+}
+.title-desc {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 40px;
+}
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
 
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 1.5s;
+}
+
+.slide img {
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #2aa5b3;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #40d3dc;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #40d3dc;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #40d3dc;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #40d3dc;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #40d3dc;
+}
+/* slider end */
 @media screen and (min-width: 600px) {
   .container {
     background-repeat: no-repeat;
@@ -292,6 +413,43 @@ a > img {
     top: 20px;
     left: 0;
   }
+  .preview {
+    width: 40%;
+  }
+  .preview-desc {
+    height: 3rem;
+    font-size: 1rem;
+  }
+  /* slider start */
+  .slider {
+    width: 400px;
+    height: 250px;
+  }
+
+  .slides {
+    width: 500%;
+    height: 250px;
+  }
+
+  .slide img {
+    width: 400px;
+    height: 250px;
+  }
+
+  /*css for manual slide navigation*/
+
+  .navigation-manual {
+    width: 400px;
+  }
+
+  /*css for automatic navigation*/
+
+  .navigation-auto {
+    width: 400px;
+    margin-top: 210px;
+  }
+
+  /* slider end */
 }
 @media screen and (max-width: 600px) {
   .trades {
@@ -313,29 +471,50 @@ a > img {
     flex-direction: column;
     font-size: 1rem;
   }
-  .design,
+  .artist,
   .developer {
     font-size: 1.7rem;
   }
-  .span-line {
-    width: 50px;
-  }
-  .preview-container {
-    grid-template-columns: auto;
-  }
+  /* .artist {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    width: 0;
+  } */
   .preview {
-    width: 90%;
+    width: 70%;
+    margin: 2.5rem 0px;
   }
 }
-
 @media screen and (max-width: 400px) {
-  .span-line {
-    visibility: hidden;
+  /* slider start */
+  .slider {
+    width: 300px;
+    height: 187.5px;
   }
-  .span-title {
-    width: 100%;
-    /* text-align: center; */
-    padding: 0;
-    /* background-color: black; */
+
+  .slides {
+    width: 500%;
+    height: 187.5px;
   }
+
+  .slide img {
+    width: 300px;
+    height: 187.5px;
+  }
+
+  /*css for manual slide navigation*/
+
+  .navigation-manual {
+    width: 300px;
+  }
+
+  /*css for automatic navigation*/
+
+  .navigation-auto {
+    width: 300px;
+    margin-top: 147.5px;
+  }
+
+  /* slider end */
 }
