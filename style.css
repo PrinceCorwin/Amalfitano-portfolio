@@ -247,6 +247,10 @@ a > img {
   background-color: var(--clr-sbwhite);
   color: var(--clr-purple);
 }
+#rpsGame {
+  background-color: var(--clr-purple);
+  color: var(--clr-sbwhite);
+}
 /* slider start */
 .artist {
   font-size: 3rem;
