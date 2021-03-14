@@ -239,9 +239,13 @@ a > img {
   background-color: red;
   color: var(--clr-sbwhite);
 }
-#todo {
+#drum {
   background-color: var(--clr-teal);
   color: var(--clr-sbwhite);
+}
+#library {
+  background-color: var(--clr-sbwhite);
+  color: var(--clr-purple);
 }
 /* slider start */
 .artist {
