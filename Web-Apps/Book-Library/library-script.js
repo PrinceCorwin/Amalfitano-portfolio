@@ -22,8 +22,27 @@ clearStorage.addEventListener("click", function () {
   publishLibrary();
 });
 const submitBook = document.getElementById("submitForm");
-submitForm.addEventListener("click", function () {
-  addBookToLibrary();
+submitBook.addEventListener("click", function () {
+  let checkTitle = document.getElementById("bookTitle").value;
+  console.log(checkTitle.value);
+  let checkAuthor = document.getElementById("bookAuthor").value;
+  if (checkTitle !== "" && checkAuthor !== "") {
+    addBookToLibrary();
+  } else {
+    let redRequired = document.querySelectorAll(".required");
+    for (let i = 0; i < redRequired.length; i++) {
+      redRequired[i].classList.add("redRequired");
+    }
+
+    removeRed = () => {
+      setTimeout(function () {
+        for (let i = 0; i < redRequired.length; i++) {
+          redRequired[i].classList.remove("redRequired");
+        }
+      }, 3000);
+    };
+    removeRed();
+  }
 });
 let parseLibrary = localStorage.getItem("myLibrary");
 if (parseLibrary != null) {
@@ -68,7 +87,7 @@ function publishLibrary() {
       newBook.className = "newBook";
       let deleteButton = document.createElement("BUTTON");
       deleteButton.className = "deleteButton";
-      deleteButton.textContent = "X";
+      deleteButton.innerHTML = "<span>&times;</span>";
 
       let newTitle = document.createElement("DIV");
       newTitle.className = "newTitle";

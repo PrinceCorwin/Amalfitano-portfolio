@@ -90,7 +90,7 @@ button,
     5px 5px 10px rgba(0, 0, 0, 0.6);
   padding: 5px 10px;
   border-radius: 15px;
-  transition: all 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in;
 }
 button:hover,
 #submitForm:hover {
@@ -123,7 +123,10 @@ form {
   left: 50%;
   transform: translateX(-150px);
 }
-
+.redRequired {
+  background-color: white;
+  color: red;
+}
 .bookList {
   display: flex;
   justify-content: flex-start;
@@ -170,6 +173,9 @@ form {
   top: 0;
   right: 0;
   padding: 2px 2px 1px 2px;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 /* form start */
 label {
@@ -214,6 +220,7 @@ select {
     display: none;
   }
   .footer {
+    margin-top: 30px;
     display: flex;
   }
   .footer > a {
