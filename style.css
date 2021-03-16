@@ -111,13 +111,15 @@ hr {
   right: 0;
 }
 /* fab is FA icon class */
-.fab {
+.fab,
+.fas {
   color: var(--clr-dark);
   cursor: pointer;
   transition: 0.3s;
 }
 
-.fab:hover {
+.fab:hover,
+.fas:hover {
   color: var(--clr-lighter);
 }
 #friend {
