@@ -254,6 +254,11 @@ a > img {
 #tic {
   background-color: rgb(124, 226, 22);
 }
+#rune {
+  background-color: rgb(196, 14, 120);
+  color: var(--clr-sbwhite);
+}
+
 /* slider start */
 .artist {
   font-size: 3rem;
